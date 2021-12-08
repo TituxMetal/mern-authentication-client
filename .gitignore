@@ -1,0 +1,7 @@
+.docker/data
+node_modules
+.cache
+.parcel-cache
+dist
+.env
+!example.env
