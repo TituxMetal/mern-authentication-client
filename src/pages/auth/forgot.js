@@ -1,10 +1,11 @@
 import React from 'react'
 
+import { Container, ForgotPasswordForm } from '~/components'
+
 const ForgotPasswordPage = () => (
-  <div>
-    <h1>Forgot password</h1>
-    <p>Form with email field</p>
-  </div>
+  <Container>
+    <ForgotPasswordForm />
+  </Container>
 )
 
 export default ForgotPasswordPage
