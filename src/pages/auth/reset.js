@@ -1,10 +1,11 @@
 import React from 'react'
 
+import { Container, ResetPasswordForm } from '~/components'
+
 const ResetPasswordPage = () => (
-  <div>
-    <h1>Reset password</h1>
-    <p>Form with password and password repeat fields</p>
-  </div>
+  <Container>
+    <ResetPasswordForm />
+  </Container>
 )
 
 export default ResetPasswordPage
