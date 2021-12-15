@@ -1,12 +1,11 @@
 import React from 'react'
-import { Link } from 'react-router-dom'
+
+import { Container, LoginRegisterForm } from '~/components'
 
 const AuthenticationPage = () => (
-  <div>
-    <h1>Authentication Page</h1>
-    <p>Form for login or register</p>
-    <Link to='forgot'>You have forgot your password?</Link>
-  </div>
+  <Container>
+    <LoginRegisterForm />
+  </Container>
 )
 
 export default AuthenticationPage
