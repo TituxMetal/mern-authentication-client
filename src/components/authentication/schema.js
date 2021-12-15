@@ -1,10 +1,11 @@
 import * as yup from 'yup'
 
-export const authFields = { email: '', password: '', username: '' }
+const authFields = { email: '', password: '', passwordConfirm: '', username: '' }
 
 export const authSchema = {
   email: yup.string().email().trim().required().label('Email'),
   password: yup.string().min(6).required().label('Password'),
+  passwordConfirm: yup.string().oneOf([yup.ref('password')], 'Passwords must match'),
   username: yup.string().min(4).required().label('Username')
 }
 
